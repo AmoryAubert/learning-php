@@ -70,13 +70,45 @@
         }
     }
 //Exercice 05
-    
+    echo "<h3>Exercice 05</h3><p>";
+    for($i = 1; $i <= 15; $i++){
+        echo "On y arrive presque";
+        if ($i < 15){
+            echo ", ";
+        } else {
+            echo ".</p>";
+        }
+    }
 //Exercice 06
-    
+    echo "<h3>Exercice 06</h3><p>";
+    for($i = 20; $i >= 0; $i--){
+        echo "C'est presque bon";
+        if ($i > 0){
+            echo ", ";
+        } else {
+            echo ".</p>";
+        }
+    }
 //Exercice 07
-    
+    echo "<h3>Exercice 07</h3><p>";
+    for($i = 1; $i <= 100; $i+=15){
+        echo "On tient le bon bout";
+        if ($i < 90){
+            echo ", ";
+        } else {
+            echo ".</p>";
+        }
+    }
 //Exercice 08
-    
+    echo "<h3>Exercice 08</h3><p>";
+    for($i = 200; $i >= 0; $i-=12){
+        echo "C'est presque bon";
+        if ($i > 10){
+            echo ", ";
+        } else {
+            echo ".</p>";
+        }
+    }
 ?>
 </body>
 </html>
