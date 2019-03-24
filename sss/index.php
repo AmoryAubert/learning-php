@@ -12,10 +12,10 @@
     //$_SESSION["login"]="niack";
     //setcookie("user", "", time() - 3601);
     function cookie(){
-        if(isset($_POST)){
+        if(isset($_POST['login'])){
             setcookie("user", $_POST['login'], false);
+            return $_COOKIE["user"];
         }
-        return $_COOKIE["user"];
     }
     cookie();
     //echo $_COOKIE["user"];
