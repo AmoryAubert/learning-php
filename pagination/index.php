@@ -88,12 +88,12 @@ $contenu = array(
         "ladate"=>"2013-11-02 21:15:00"
     )
 );
-$elements=count($contenu);//total
-$elementsParPage=4;//limit
-$nbPage=ceil($elements/$elementsParPage);//totalpage
+$elements=count($contenu);
+$elementsParPage=4;
+$nbPage=ceil($elements/$elementsParPage);
 $page = ! empty( $_GET['page'] ) ? (int) $_GET['page'] : 1;
-$page = max($page, 1); //get 1 page when $_GET['page'] <= 0
-$page = min($page, $nbPage); //get last page when $_GET['page'] > $totalPages
+$page = max($page, 1);
+$page = min($page, $nbPage);
 $offset = ($page - 1) * $elementsParPage;
 if( $offset < 0 ) $offset = 0;
 
@@ -167,10 +167,7 @@ a{
 <main>
 <?php
 //var_dump($contenu2);
-foreach ($contenu2 as $v1) {
-    //foreach ($v1 as $v2) {
-    //    echo "<p>".$v2."</p>";
-    //}
+foreach ($contenu2 as $v1){
     echo "<div class='article'>
           <h3>".$v1['titre']."</h3>
           <p class='texte'>".$v1['letexte']."</p>
