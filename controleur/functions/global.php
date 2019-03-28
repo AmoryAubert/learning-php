@@ -1,6 +1,6 @@
 <?php
 
-$items = array('Home','Lions','Limpada','Crocodile','Elephant','Tigre');
+$items = array('Accueil','Lion','Impala','Crocodile','Elephant','Tigre');
 
 $link = 'http://localhost/controleur/index.php';
 

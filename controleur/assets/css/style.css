@@ -1,0 +1,20 @@
+body{
+    background-color: #DAF2F2;
+    width: 100%;
+}
+nav{
+    background-color: #abd8d8;
+}
+body{
+    text-align: center;
+}
+h2{
+    padding: 20px 0 10px;
+}
+p{
+    text-align: justify;
+}
+img{
+    float: left;
+    margin-right: 30px;
+}

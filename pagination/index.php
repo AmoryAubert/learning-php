@@ -96,7 +96,6 @@ $page = max($page, 1);
 $page = min($page, $nbPage);
 $offset = ($page - 1) * $elementsParPage;
 if( $offset < 0 ) $offset = 0;
-
 $contenu2 = array_slice( $contenu, $offset, $elementsParPage );
 $link = 'index.php?page=%d';
 $pagerContainer = '<div>';
